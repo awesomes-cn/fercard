@@ -64,7 +64,8 @@ a {
   background-position: 50%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  overflow: hidden
+  overflow: hidden;
+  animation: slideInDown 1s;
 }
 
 .cover:before{
@@ -76,6 +77,10 @@ a {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+}
+.cover:hover:before{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .cover .inner{
@@ -98,6 +103,10 @@ a {
   padding: 10px;
   width: 100px;
   box-shadow: 0px 0px 10px #DDD;
+}
+
+.cover .repo-name {
+  animation: slideInUp 1s;
 }
 
 
@@ -141,7 +150,7 @@ a {
   left: 0;
   z-index: 0;
   filter: drop-shadow(0px 5px 8px #ff6ba4);
-  /* animation: circle 5s linear infinite; */
+  animation: zoomIn 1s ; 
 }
 
 .icon-certificate h3 {
@@ -184,7 +193,9 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  border: rgba(255, 255, 255, 0.6) 8px solid;
+  border-color: rgba(255, 255, 255, 0.6) ;
+  border-style: solid;
+  border-width: 8px;
 }
 .box-fresh.fresh-often {
   background-color: rgba(76, 175, 80, 0.03)
@@ -201,11 +212,31 @@ a {
   background-color: #F44336;
 }
 
-@keyframes circle {
+@keyframes slideInUp {
   0% {
-    transform: rotate()(0)
+    transform: translateY(-30px)
   }
   100% {
-    transform: rotate(360deg)
+    transform: translateY(0px)
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 50%;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0) rotate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(180deg);
+    opacity: 1;
   }
 }
