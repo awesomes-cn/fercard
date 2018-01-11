@@ -1,0 +1,59 @@
+{
+  "lang": {
+    "message":  "en"
+  },
+  "subError1": {
+    "message": "current URL is invalid"
+  },
+  "subError2": {
+    "message": "please go to valid GitHub repo address"
+  },
+  "helpTitle": {
+    "message": "Command mode"
+  },
+ "helpSub": {
+    "message": "Submit Library"
+  },
+  "helpTop": {
+    "message": "Top 100 Front-End frameworks"
+  },
+  "helpSubject": {
+    "message": "List all subjects"
+  },
+  "helpSubRepos": {
+    "message": "List all repos under a subject"
+  },
+  "helpSubName": {
+    "message": "Subject name"
+  },
+  "repoTrend": {
+    "message": "Trend"
+  },
+  "repoUsing": {
+    "message": "Using"
+  },
+  "repoIssue": {
+    "message": "Issue response rate"
+  },
+  "repoStar": {
+    "message": "Star"
+  },
+  "searchNotfind": {
+    "message": "Not found related repository"
+  },
+  "subTxt": {
+    "message": "Submit current URL"
+  },
+  "subSuccess": {
+    "message": "Thanks for your share, we will review as soon as possible"
+  },
+  "timeOutdated": {
+    "message": "Outdated"
+  },
+  "timeFrequently": {
+    "message": "Frequently"
+  },
+  "timeNormal": {
+    "message": "Normal"
+  }
+}

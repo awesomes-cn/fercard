@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "FeexCard",
+  "description": "Front-End Repo Card",
+  "version": "1.0.3",
+
+  "default_locale": "en",
+
+  "permissions": [
+    "tabs",
+    "notifications",
+    "idle",
+    "http://*/",
+    "https://*/"
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "./html/home.html"
+  }
+}

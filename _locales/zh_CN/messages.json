@@ -1,0 +1,60 @@
+
+{
+  "lang": {
+    "message":  "zh_CN"
+  },
+  "subError1": {
+    "message": "当前URL格式不满足要求"
+  },
+  "subError2": {
+    "message": "请前往正确的GitHub仓库地址"
+  },
+  "helpTitle": {
+    "message": "命令模式"
+  },
+  "helpSub": {
+    "message": "提交库"
+  },
+  "helpTop": {
+    "message": "获取前端 top100 框架"
+  },
+  "helpSubject": {
+    "message": "获取所有专题"
+  },
+  "helpSubRepos": {
+    "message": "获取某个专题下的所有库"
+  },
+  "helpSubName": {
+    "message": "专题名"
+  },
+  "repoTrend": {
+    "message": "趋势"
+  },
+  "repoUsing": {
+    "message": "在用"
+  },
+  "repoIssue": {
+    "message": "Issue响应速度"
+  },
+  "repoStar": {
+    "message": "Star数"
+  },
+  "searchNotfind": {
+    "message": "未找到相关的库"
+  },
+  "subTxt": {
+    "message": "提交当前库"
+  },
+  "subSuccess": {
+    "message": "感谢您的分享，我们会尽快审核"
+  },
+  "timeOutdated": {
+    "message": "过期"
+  },
+  "timeFrequently": {
+    "message": "频繁"
+  },
+  "timeNormal": {
+    "message": "正常"
+  }
+}
