@@ -1,6 +1,5 @@
 var APP
 var baseUrl = 'https://api.awesomes.cn/'
-//var baseUrl = 'http://192.168.141.128:3000/'
 
 APP = new Vue({
   el: 'body',
@@ -9,7 +8,7 @@ APP = new Vue({
   },
   methods: {
     initRepo: function () {
-      let url = baseUrl + 'repo/zenorocha/clipboard-js'
+      let url = baseUrl + 'repo/random'
       let _self = this
       axios.get(url).then(function (res) {
         _self.repo = res.data
