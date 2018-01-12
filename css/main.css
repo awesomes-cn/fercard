@@ -17,6 +17,10 @@ body {
   flex-direction: column
 }
 
+[v-cloak] {
+  display: none
+}
+
 a {
   color: #333;
   text-decoration: none;
@@ -96,6 +100,8 @@ a {
   justify-content: center;
   text-shadow: 1px 1px 1px #828282;
   color: #FFF;
+  padding: 20px;
+  word-break: break-all;
 }
 
 .cover img {
@@ -162,6 +168,10 @@ a {
   padding: 10px 20px;
 }
 
+.box-desc {
+  min-height: 90px;
+}
+
 .box-date {
   font-size: 13px;
   color: #6a757b;
@@ -169,6 +179,7 @@ a {
 
 .box-params {
   padding-bottom: 20px;
+  height: 50px;
 }
 
 .box-fresh {

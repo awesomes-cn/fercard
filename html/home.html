@@ -9,7 +9,7 @@
     <div class="container">
       <div class="cover" style="background-image: url({{cdn(repo.cover, 'repo')}})">
         <a class="inner" href="https://www.awesomes.cn/repo/{{repo.owner}}/{{repo.alia}}">
-          <h1 class="repo-name">{{repo.name}}</h1>
+          <h1 class="repo-name" v-cloak>{{repo.name}}</h1>
         </a>
       </div>
       <div class="context">
@@ -18,36 +18,40 @@
               <svg>
                 <use xlink:href="/css/icon.svg#certificate"></use>
               </svg>
-              <h3>{{repo.score}}</h3>
+              <h3 v-cloak>{{repo.score}}</h3>
             </span>
           </div>
-        <div class="item-box">{{repo.description_cn || repo.description}}</div>
+        <div class="item-box box-desc">
+          <span v-cloak>
+            {{repo.description_cn || repo.description}}
+          </span>
+        </div>
        
-        <div class="item-box box-params">
+        <div class="item-box box-params"  v-cloak>
           <div class="icon icon-star">
             <svg>
               <use xlink:href="/css/icon.svg#star"></use>
             </svg>
-            <span>{{repo.stargazers_count}}</span>
+            <span v-cloak>{{repo.stargazers_count}}</span>
           </div>
           <div class="icon icon-star">
             <svg>
               <use xlink:href="/css/icon.svg#fork"></use>
             </svg>
-            <span>{{repo.forks_count}}</span>
+            <span v-cloak>{{repo.forks_count}}</span>
           </div>
           <div class="icon icon-star">
             <svg>
               <use xlink:href="/css/icon.svg#mans"></use>
             </svg>
-            <span>{{repo.using}} 人在用</span>
+            <span v-cloak>{{repo.using}} 人在用</span>
           </div>
         </div>
        
         <!-- <div class="item-box box-date">创建于 3年前  最近更新于 4天前</div> -->
         <div class="item-box box-fresh fresh-{{formatFresh(repo.pushed_at)[0]}}">
           <span class="state-fresh "></span>
-          <span class="txt">{{formatFresh(repo.pushed_at)[1]}}</span>
+          <span class="txt"  v-cloak>{{formatFresh(repo.pushed_at)[1] || '...'}}</span>
         </div>
       </div>
     </div>
