@@ -9,11 +9,15 @@
     <div class="container">
       <div class="cover" style="background-image: url({{cdn(repo.cover, 'repo')}})">
         <a class="inner" href="https://www.awesomes.cn/repo/{{repo.owner}}/{{repo.alia}}">
+          <div class="catogry" v-cloak>
+            <span>{{repo.rootyp_zh}}</span>
+            <span>{{repo.typcd_zh}}</span>
+          </div>
           <h1 class="repo-name" v-cloak>{{repo.name}}</h1>
         </a>
       </div>
       <div class="context">
-        <div class="cer-box">
+        <div class="cer-box" title="评分">
             <span class="icon icon-certificate">
               <svg>
                 <use xlink:href="/css/icon.svg#certificate"></use>
@@ -27,7 +31,7 @@
           </span>
         </div>
        
-        <div class="item-box box-params"  v-cloak>
+        <div class="item-box box-params">
           <div class="icon icon-star">
             <svg>
               <use xlink:href="/css/icon.svg#star"></use>
@@ -51,7 +55,9 @@
         <!-- <div class="item-box box-date">创建于 3年前  最近更新于 4天前</div> -->
         <div class="item-box box-fresh fresh-{{formatFresh(repo.pushed_at)[0]}}">
           <span class="state-fresh "></span>
-          <span class="txt"  v-cloak>{{formatFresh(repo.pushed_at)[1] || '...'}}</span>
+          <span class="txt">
+            <span  v-cloak>{{formatFresh(repo.pushed_at)[1]}}</span>
+          </span>
         </div>
       </div>
     </div>

@@ -102,7 +102,31 @@ a {
   color: #FFF;
   padding: 20px;
   word-break: break-all;
+  flex-direction: column
 }
+
+.cover .inner .catogry span {
+  display: inline-block;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cover .inner .catogry span:nth-child(1){
+  animation: slideInLeft 1s;
+}
+.cover .inner .catogry span:nth-child(2){
+  animation: slideInRight 1s;
+}
+.cover .inner .catogry {
+  position: absolute;
+  top: 20px;
+}
+
 
 .cover img {
   background-color: #FFF;
@@ -169,7 +193,9 @@ a {
 }
 
 .box-desc {
-  min-height: 90px;
+  height: 90px;
+  line-height: 25px;
+  overflow: hidden;
 }
 
 .box-date {
@@ -192,10 +218,13 @@ a {
   border-bottom-right-radius: 5px;
   font-size: 12px;
   padding: 20px;
+  height: 95px;
 }
 
 .box-fresh .txt {
   margin-top: 10px;
+  display: inline-block;
+  height: 16px;
 }
 
 .state-fresh {
@@ -229,6 +258,24 @@ a {
   }
   100% {
     transform: translateY(0px)
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-30px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(30px)
+  }
+  100% {
+    transform: translateX(0px)
   }
 }
 
